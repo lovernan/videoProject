@@ -1,1 +1,24 @@
-![Image text](videoProject/1.JPG)
+具体细节及成果展示见博客
+最近学校安排了生产实习，主要是完成一个视频分享软件除了用户设计还需要一定的后台管理。具体见下图
+最终决定通过小程序实现用户的所有功能，网页端完成后的框架搭建。
+最终成品展示如下（见博客）
+用户端：(见博客)
+网页端：（见博客）
+遇到的那些坑
+由于考研的日子好久没有写过代码导致在此出现了许多的坑，由于出现问题未能及时截图故只此用语言尽可能详细描述。
+1.错误提示为service层无法注入的问题而产生的空指针异常
+解决方案：此问题在于在调用service层的服务是使用了new关键字进行创建对象具体如下
+ServiceInterface interface = new ServiceInterfaceImp();
+直接删除通过@Autowired注入的ServiceInterface直接注入的对象进行函数调用即可
+2.tomcat启动报错，unzip问题
+解决方案：jar包损坏，直接导入新的jar包即可
+3.前台传送数据int和String类型的问题
+解决方案：前台传来的数据不能为int类型，应为String类型。当前台数据为int类型时使用两种方法转为字符串
+* int.toString();
+* int+””;
+4.读写数据库导致乱码（无法插入）
+Incorrect string value: ‘\xE7\xA8\x8B\xE5\xBA\x8F…’ for column ‘course’ at row 1
+解决方案：此问题在于数据库在创建时表字段的编码问题不是utf-8导致的（本次错误是由于表字段为latin导致）。直接在数据库修改表字段为utf-8即可。
+
+
+http://www.whxlover.cn/2020/01/01/生产实习的一些总结（ssm框架的那些坑）/

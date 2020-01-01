@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/cn/whxlover/controller/VideoUserModel.java=UTF-8
+encoding//src/cn/whxlover/controller/meetingModel.java=UTF-8
+encoding//src/cn/whxlover/controller/userModel.java=UTF-8
+encoding//src/cn/whxlover/convert/DateConverter.java=UTF-8
+encoding//src/cn/whxlover/service/VideoUserSerImp.java=UTF-8
+encoding//src/cn/whxlover/service/meetingsSer.java=UTF-8
+encoding//src/cn/whxlover/service/meetingsSerImpl.java=UTF-8
+encoding//src/cn/whxlover/service/userSer.java=UTF-8
+encoding//src/cn/whxlover/service/userSerImpl.java=UTF-8
+encoding/<project>=GBK
